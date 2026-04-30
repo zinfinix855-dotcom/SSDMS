@@ -1,0 +1,749 @@
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:24:41"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:24:41"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:24:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:24:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:24:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:24:41"}
+{"level":"error","message":"UNCAUGHT EXCEPTION! 💥 Shutting down... BullMQ: Your redis options maxRetriesPerRequest must be null.","stack":"Error: BullMQ: Your redis options maxRetriesPerRequest must be null.\n    at RedisConnection.checkBlockingOptions (D:\\Projects\\SSDMS\\Sehat Sahulat Deparment Managment System\\ssdms-backend\\node_modules\\bullmq\\dist\\cjs\\classes\\redis-connection.js:73:23)\n    at new RedisConnection (D:\\Projects\\SSDMS\\Sehat Sahulat Deparment Managment System\\ssdms-backend\\node_modules\\bullmq\\dist\\cjs\\classes\\redis-connection.js:53:18)\n    at new Worker (D:\\Projects\\SSDMS\\Sehat Sahulat Deparment Managment System\\ssdms-backend\\node_modules\\bullmq\\dist\\cjs\\classes\\worker.js:121:35)\n    at SLAWorker.start (D:\\Projects\\SSDMS\\Sehat Sahulat Deparment Managment System\\ssdms-backend\\workers\\SLAWorker.js:19:23)\n    at startServer (D:\\Projects\\SSDMS\\Sehat Sahulat Deparment Managment System\\ssdms-backend\\server.js:40:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)","timestamp":"2026-04-23 16:24:41"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:25:20"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:23"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:23"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:24"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:24"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:25"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:26"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:26"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:27"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:28"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:29"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:30"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:31"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:32"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:33"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:34"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:35"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:36"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:37"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:39"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:40"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:42"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:43"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:45"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:46"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:51"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:55"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:25:58"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:00"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:02"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:04"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:06"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:08"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:10"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:12"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:14"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:16"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:18"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:20"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:23"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:25"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:27"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:29"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:31"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:33"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:35"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:37"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:39"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:43"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:45"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:47"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:51"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:26:52"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:26:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:26:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:26:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:55"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:26:59"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:01"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:03"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:05"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:07"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:09"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:11"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:13"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:15"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:17"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:19"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:23"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:25"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:27"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:29"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:31"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:33"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:35"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:37"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:39"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:43"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:45"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:47"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:51"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:55"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:27:59"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:01"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:03"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:05"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:07"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:09"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:11"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:13"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:15"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:28:47"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:28:48"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:50"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:50"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:51"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:51"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:52"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:52"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:54"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:55"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:56"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:28:58"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:00"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:01"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:02"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:03"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:04"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:06"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:07"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:08"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:10"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:11"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:13"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:15"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:16"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:18"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:20"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:21"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:23"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:25"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:27"}
+{"level":"warn","message":"[613fe577-411f-466f-996f-7a043b677bbe] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 10.316 ms [CID: 613fe577-411f-466f-996f-7a043b677bbe]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[2e79ac74-8fc2-451e-b67c-a6ec7d99c711] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 2.332 ms [CID: 2e79ac74-8fc2-451e-b67c-a6ec7d99c711]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[7e81901f-d771-4ff4-9701-7b8fc26eb547] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.865 ms [CID: 7e81901f-d771-4ff4-9701-7b8fc26eb547]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[13734ca9-4ced-4d4f-a69b-b6c0f794648a] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.050 ms [CID: 13734ca9-4ced-4d4f-a69b-b6c0f794648a]","timestamp":"2026-04-23 16:29:29"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[4d87ca61-a661-4d2b-8835-253d7b63e1de] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.198 ms [CID: 4d87ca61-a661-4d2b-8835-253d7b63e1de]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[6aadb57f-faec-42f1-867d-418e73061c06] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.773 ms [CID: 6aadb57f-faec-42f1-867d-418e73061c06]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[fd317d1c-1344-4dbf-a6aa-746d61b370b2] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.496 ms [CID: fd317d1c-1344-4dbf-a6aa-746d61b370b2]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[a96dab18-1711-4673-92dc-16e4d6b4a684] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:29"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.921 ms [CID: a96dab18-1711-4673-92dc-16e4d6b4a684]","timestamp":"2026-04-23 16:29:29"}
+{"level":"warn","message":"[dd4eb05f-6840-402c-b058-48b0daaafbca] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.943 ms [CID: dd4eb05f-6840-402c-b058-48b0daaafbca]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[5810afa7-b52e-4f7f-ac3e-d0aab0467f88] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.586 ms [CID: 5810afa7-b52e-4f7f-ac3e-d0aab0467f88]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[fa7e3e93-3498-4b79-b026-a96c27001e3f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.016 ms [CID: fa7e3e93-3498-4b79-b026-a96c27001e3f]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[f5ac5a1d-1e1f-47e4-a867-bc4a55866861] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.819 ms [CID: f5ac5a1d-1e1f-47e4-a867-bc4a55866861]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[3f80c5f4-200c-49a5-a054-6766596129ac] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.856 ms [CID: 3f80c5f4-200c-49a5-a054-6766596129ac]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[57304f95-35c1-490d-94d9-2696cb27dde8] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.027 ms [CID: 57304f95-35c1-490d-94d9-2696cb27dde8]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[813c2c4b-1efb-4bfe-a059-1b40efb31b44] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.742 ms [CID: 813c2c4b-1efb-4bfe-a059-1b40efb31b44]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[2525bc06-3a39-4a40-9811-6aadb4f86a65] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.714 ms [CID: 2525bc06-3a39-4a40-9811-6aadb4f86a65]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[066dab47-ede5-4b25-9f7f-8ab307a8da9e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.814 ms [CID: 066dab47-ede5-4b25-9f7f-8ab307a8da9e]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[9bcd591c-3a46-4668-ac97-261ce06463dd] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.826 ms [CID: 9bcd591c-3a46-4668-ac97-261ce06463dd]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[716bb300-ecb5-45f9-94f8-007f9b4a6386] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.721 ms [CID: 716bb300-ecb5-45f9-94f8-007f9b4a6386]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[448ca2ff-9583-42a9-9496-1b00ba5e49e9] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.700 ms [CID: 448ca2ff-9583-42a9-9496-1b00ba5e49e9]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[a12ccb14-51f6-429e-9c52-b5cc3586c8e8] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.655 ms [CID: a12ccb14-51f6-429e-9c52-b5cc3586c8e8]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[96d03260-30e4-4820-9686-e5dd34706e97] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.758 ms [CID: 96d03260-30e4-4820-9686-e5dd34706e97]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[eb7e6ae8-97c8-48ee-93a2-d0ee7fbb0b84] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.946 ms [CID: eb7e6ae8-97c8-48ee-93a2-d0ee7fbb0b84]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[9bd3f90a-eb1e-4b32-b4ef-e17460e50009] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.743 ms [CID: 9bd3f90a-eb1e-4b32-b4ef-e17460e50009]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[6ef627eb-8519-4db9-bfc5-92794df1e938] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.917 ms [CID: 6ef627eb-8519-4db9-bfc5-92794df1e938]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[fed122c1-68f1-4dff-b8bf-2913c36a669d] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.973 ms [CID: fed122c1-68f1-4dff-b8bf-2913c36a669d]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[3d07140c-f3a3-4679-8a83-0fef9f2f9ce8] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.662 ms [CID: 3d07140c-f3a3-4679-8a83-0fef9f2f9ce8]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[d97ec612-efdf-4e54-97ca-aec822e47175] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:30"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.713 ms [CID: d97ec612-efdf-4e54-97ca-aec822e47175]","timestamp":"2026-04-23 16:29:30"}
+{"level":"warn","message":"[ee4d5b35-9339-486b-8d66-f24f4fa9a18f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.943 ms [CID: ee4d5b35-9339-486b-8d66-f24f4fa9a18f]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[d7c63c32-66df-453a-8653-18cecdccd02e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.720 ms [CID: d7c63c32-66df-453a-8653-18cecdccd02e]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[ad735b34-510c-4c88-8b43-9c099c3dbfb8] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.711 ms [CID: ad735b34-510c-4c88-8b43-9c099c3dbfb8]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[03e32874-c083-4bc2-aac0-3f6c68749cbf] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.662 ms [CID: 03e32874-c083-4bc2-aac0-3f6c68749cbf]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[4213d5d3-0d40-42ff-a6a9-583635f9a2fd] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.795 ms [CID: 4213d5d3-0d40-42ff-a6a9-583635f9a2fd]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[0120cefd-8d89-416d-96a0-53f2453d30ed] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.685 ms [CID: 0120cefd-8d89-416d-96a0-53f2453d30ed]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[6944c146-81a9-4f6b-9cc0-66a2b44370e9] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.896 ms [CID: 6944c146-81a9-4f6b-9cc0-66a2b44370e9]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[2ab9419d-e785-4616-98b4-8529d93c38ca] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.743 ms [CID: 2ab9419d-e785-4616-98b4-8529d93c38ca]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[54c8e905-d6e7-456d-b6d4-7f2e23580c37] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.737 ms [CID: 54c8e905-d6e7-456d-b6d4-7f2e23580c37]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[6b08c49b-cdab-4c7e-9156-00be70ecfb3f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.673 ms [CID: 6b08c49b-cdab-4c7e-9156-00be70ecfb3f]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[42dff68c-9155-4630-813c-1c9428c0746e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.789 ms [CID: 42dff68c-9155-4630-813c-1c9428c0746e]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[dd4009a6-870d-4540-ab61-ef09e13ec810] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.635 ms [CID: dd4009a6-870d-4540-ab61-ef09e13ec810]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[d0acd1ae-582f-4627-85a7-344c8a8b9926] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.673 ms [CID: d0acd1ae-582f-4627-85a7-344c8a8b9926]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[7d76970e-53d4-4953-ba86-fbc18e4f8762] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.629 ms [CID: 7d76970e-53d4-4953-ba86-fbc18e4f8762]","timestamp":"2026-04-23 16:29:31"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[712322b5-1801-4c54-8f65-29948997a7dd] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.281 ms [CID: 712322b5-1801-4c54-8f65-29948997a7dd]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[e5b04d11-1ba2-4280-9895-c1108ae6070b] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.657 ms [CID: e5b04d11-1ba2-4280-9895-c1108ae6070b]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[fc7caa18-ec38-4fec-815e-149116321cbc] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.454 ms [CID: fc7caa18-ec38-4fec-815e-149116321cbc]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[963fbe0a-5a19-4b0c-bcaf-b6e2904bbf8f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:31"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 2.337 ms [CID: 963fbe0a-5a19-4b0c-bcaf-b6e2904bbf8f]","timestamp":"2026-04-23 16:29:31"}
+{"level":"warn","message":"[ede9df8a-73ef-4955-b262-628b69deab06] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.742 ms [CID: ede9df8a-73ef-4955-b262-628b69deab06]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[3eda6b34-604a-4f9d-b907-b7fd59ff8b48] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.768 ms [CID: 3eda6b34-604a-4f9d-b907-b7fd59ff8b48]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[407953e2-400e-4f2c-86a4-338790384567] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.695 ms [CID: 407953e2-400e-4f2c-86a4-338790384567]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[ac2a4718-3c8f-459d-b500-96851fb112d9] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.712 ms [CID: ac2a4718-3c8f-459d-b500-96851fb112d9]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[c4f375a0-e1bd-4598-9641-59cf7fa3048b] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.057 ms [CID: c4f375a0-e1bd-4598-9641-59cf7fa3048b]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[13f0e28f-92a3-4599-b58c-973e6df0c454] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.692 ms [CID: 13f0e28f-92a3-4599-b58c-973e6df0c454]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[78f2a596-7d9a-44b9-939f-782b59395076] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.773 ms [CID: 78f2a596-7d9a-44b9-939f-782b59395076]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[f299041b-08bd-4397-8892-836e591dacdf] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.175 ms [CID: f299041b-08bd-4397-8892-836e591dacdf]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[6890e7a8-c030-4796-a3a9-6de7c39b3ea1] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.007 ms [CID: 6890e7a8-c030-4796-a3a9-6de7c39b3ea1]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[b1c6f182-1862-4e75-bc08-9a7628da9692] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.378 ms [CID: b1c6f182-1862-4e75-bc08-9a7628da9692]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[ae5d3a4d-add9-43c7-af28-c857154affcf] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.093 ms [CID: ae5d3a4d-add9-43c7-af28-c857154affcf]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[467b7926-f3cf-4b83-bb8e-0f66ed9ba97e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.654 ms [CID: 467b7926-f3cf-4b83-bb8e-0f66ed9ba97e]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[2a0543f1-6e0c-4a3a-9f46-3789c8bbb8a1] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.001 ms [CID: 2a0543f1-6e0c-4a3a-9f46-3789c8bbb8a1]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[742bd66b-ce94-4095-ba3e-4cdc448b1742] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.659 ms [CID: 742bd66b-ce94-4095-ba3e-4cdc448b1742]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[cae71793-53e6-4841-b782-792ada30ada7] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.862 ms [CID: cae71793-53e6-4841-b782-792ada30ada7]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[1f36609a-d471-4b1a-bd28-87e080723ccc] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:32"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.711 ms [CID: 1f36609a-d471-4b1a-bd28-87e080723ccc]","timestamp":"2026-04-23 16:29:32"}
+{"level":"warn","message":"[11b84a36-60f1-4fbb-b7cb-7358084f6f10] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:33"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.768 ms [CID: 11b84a36-60f1-4fbb-b7cb-7358084f6f10]","timestamp":"2026-04-23 16:29:33"}
+{"level":"warn","message":"[07d1db45-aa6f-43a2-9123-e466bd790195] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:33"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.650 ms [CID: 07d1db45-aa6f-43a2-9123-e466bd790195]","timestamp":"2026-04-23 16:29:33"}
+{"level":"warn","message":"[3a9f74f4-ba1f-4685-aaa8-1c755e347bb5] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:29:33"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.244 ms [CID: 3a9f74f4-ba1f-4685-aaa8-1c755e347bb5]","timestamp":"2026-04-23 16:29:33"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:33"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:35"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:37"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:39"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:41"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:43"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:45"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:47"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:49"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:51"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:53"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:55"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:57"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:29:59"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:01"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:03"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:05"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:07"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:09"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:11"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:13"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:16"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:18"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:20"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:24"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:26"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:28"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:30"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:32"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:34"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:36"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:38"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:40"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:42"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:44"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:46"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:50"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:52"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:54"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:56"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:30:58"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:00"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:02"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:04"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:06"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:08"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:10"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:12"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:14"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:16"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:18"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:20"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:24"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:26"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:28"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:30"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:32"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:34"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:36"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:38"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:40"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:42"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:44"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:46"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:50"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:52"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:54"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:56"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:31:58"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:00"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:02"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:04"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:06"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:08"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:10"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:12"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:14"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:16"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:18"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:20"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:22"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:24"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:26"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:28"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:30"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:32"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:34"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:36"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:38"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:40"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:42"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:44"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:46"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:48"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:50"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:52"}
+{"level":"error","message":"❌ Redis error:","timestamp":"2026-04-23 16:32:54"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:57"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:57"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:57"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:57"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:57"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:33:00"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:33:00"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:32:58"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:32:59"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:33:00"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:33:00"}
+{"level":"info","message":"GET /api/v1/auth/login 404 70 - 11.354 ms [CID: a5a61e61-525c-48f7-b3f5-f4e249a31fc3]","timestamp":"2026-04-23 16:35:17"}
+{"level":"warn","message":"[87c1dcd2-7dfc-4107-99b9-e8c1445f03e4] 400 - Expected property name or '}' in JSON at position 1 (line 1 column 2) - /api/v1/auth/login - POST - ::1","timestamp":"2026-04-23 16:36:44"}
+{"level":"warn","message":"[05d65ff2-3ab7-4848-8c7a-d8a509e11aea] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:39:41"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 7.782 ms [CID: 05d65ff2-3ab7-4848-8c7a-d8a509e11aea]","timestamp":"2026-04-23 16:39:41"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:42:51"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:42:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:42:53"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:43:52"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:43:52"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:43:52"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:43:52"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:44:03"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:44:03"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:44:03"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:44:03"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:48:26"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:48:27"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:52:59"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:52:59"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:52:59"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:52:59"}
+{"level":"warn","message":"[a78c9f08-9fa0-419a-b6fe-fcc4c3cba9d9] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 4.884 ms [CID: a78c9f08-9fa0-419a-b6fe-fcc4c3cba9d9]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[d0ceb210-c0f6-4885-8b1a-1edcec295207] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 2.726 ms [CID: d0ceb210-c0f6-4885-8b1a-1edcec295207]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[efd45a35-98ca-4c60-a2e2-60dd38b1c5b8] 400 - Refresh token required - /api/v1/auth/refresh-token - POST - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 400 1100 - 2.037 ms [CID: efd45a35-98ca-4c60-a2e2-60dd38b1c5b8]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[fa733d8a-f0cc-4452-a45a-243a052e779e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.070 ms [CID: fa733d8a-f0cc-4452-a45a-243a052e779e]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[029e4f24-6aff-41b4-979b-b3fa143bcf62] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.727 ms [CID: 029e4f24-6aff-41b4-979b-b3fa143bcf62]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[54e3275a-fb0e-4ddc-93de-677fa393a1fb] 400 - Refresh token required - /api/v1/auth/refresh-token - POST - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 400 1100 - 2.761 ms [CID: 54e3275a-fb0e-4ddc-93de-677fa393a1fb]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[ba427e31-4098-45ad-8c7b-7d8a87ccfc5e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.764 ms [CID: ba427e31-4098-45ad-8c7b-7d8a87ccfc5e]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[f4869144-2879-4ca7-bd5f-3896c7c72246] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.739 ms [CID: f4869144-2879-4ca7-bd5f-3896c7c72246]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[157b0c56-200d-4eed-84d9-ab05f832e501] 400 - Refresh token required - /api/v1/auth/refresh-token - POST - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 400 1100 - 1.236 ms [CID: 157b0c56-200d-4eed-84d9-ab05f832e501]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[83ea9020-6104-4e3a-ba09-e9c3b1abb0d1] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.699 ms [CID: 83ea9020-6104-4e3a-ba09-e9c3b1abb0d1]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[32f4da3c-f502-4882-80f5-92becd411bef] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.635 ms [CID: 32f4da3c-f502-4882-80f5-92becd411bef]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[fb7c002a-3e83-4414-83c5-54cd94e68f4e] 400 - Refresh token required - /api/v1/auth/refresh-token - POST - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 400 1100 - 0.643 ms [CID: fb7c002a-3e83-4414-83c5-54cd94e68f4e]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[a28b5f1c-9c8e-40d9-b780-dfd4e6a35e6e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.722 ms [CID: a28b5f1c-9c8e-40d9-b780-dfd4e6a35e6e]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[86520bc3-e4a9-494b-a386-fa13b5d2a1c0] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.659 ms [CID: 86520bc3-e4a9-494b-a386-fa13b5d2a1c0]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[74b97faf-75c9-4802-9adf-34f893b53b6c] 400 - Refresh token required - /api/v1/auth/refresh-token - POST - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 400 1100 - 0.612 ms [CID: 74b97faf-75c9-4802-9adf-34f893b53b6c]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[02da2d1a-884e-470f-bf59-5d0155a44730] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.712 ms [CID: 02da2d1a-884e-470f-bf59-5d0155a44730]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[906b7c94-863d-4538-86a7-4170e92aecd8] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.805 ms [CID: 906b7c94-863d-4538-86a7-4170e92aecd8]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.798 ms [CID: 06e063c5-169e-476e-9cae-9fa9cf178ded]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[706a0c2b-0114-4859-abe3-b7284b4254b1] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.643 ms [CID: 706a0c2b-0114-4859-abe3-b7284b4254b1]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[1d44ce06-ca51-4dfd-ba99-e84c9e32a571] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.681 ms [CID: 1d44ce06-ca51-4dfd-ba99-e84c9e32a571]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.560 ms [CID: 2353d522-5cf9-4080-9f4c-24d296693f45]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[ccf97061-fd23-4a3b-8cc0-e1488702bfe7] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.745 ms [CID: ccf97061-fd23-4a3b-8cc0-e1488702bfe7]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[28ed58a6-05af-48d6-a0b0-606212afed7f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.807 ms [CID: 28ed58a6-05af-48d6-a0b0-606212afed7f]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.647 ms [CID: b206baf6-6298-4ff2-ad67-60e1b1fa4c68]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[8f9961be-8c62-4629-8651-ce8568ca7151] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.684 ms [CID: 8f9961be-8c62-4629-8651-ce8568ca7151]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[17f2d337-a6f8-457c-ac79-2c9a3cc321ba] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.629 ms [CID: 17f2d337-a6f8-457c-ac79-2c9a3cc321ba]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.587 ms [CID: 3704cff3-27ed-4e7a-9590-c766f4e201c9]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[8de24a37-7dec-47e2-831a-d62b55e32952] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.660 ms [CID: 8de24a37-7dec-47e2-831a-d62b55e32952]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[493ba454-1d17-44e5-9132-07d8f89d2536] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.937 ms [CID: 493ba454-1d17-44e5-9132-07d8f89d2536]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.657 ms [CID: 181d3991-e832-4bc9-9746-1033af156e43]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[851811cc-e64a-4dfb-98cf-8b1df5b76a0b] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.741 ms [CID: 851811cc-e64a-4dfb-98cf-8b1df5b76a0b]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[ce90420a-ba22-4063-b786-4fb9183f917e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.600 ms [CID: ce90420a-ba22-4063-b786-4fb9183f917e]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.718 ms [CID: 501142c3-8636-446b-bfe0-bcc553b0f9dc]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[9d566d93-09ce-498d-b5fd-a5fa1ea3fb2f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.617 ms [CID: 9d566d93-09ce-498d-b5fd-a5fa1ea3fb2f]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[00a1126f-158c-410e-87b1-02f87f2b2a1a] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 7.263 ms [CID: 00a1126f-158c-410e-87b1-02f87f2b2a1a]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:11"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.508 ms [CID: 52ecf445-4f7d-45ad-9582-2a4eb675de30]","timestamp":"2026-04-23 16:53:11"}
+{"level":"warn","message":"[d8614252-6975-40ee-b325-2f88d4a42b0c] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.792 ms [CID: d8614252-6975-40ee-b325-2f88d4a42b0c]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[46a6cc95-8f81-4236-9e4a-49eb7f2b8fdd] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.052 ms [CID: 46a6cc95-8f81-4236-9e4a-49eb7f2b8fdd]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.640 ms [CID: 8b32169f-e50c-4f50-bd25-f16cc0863918]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[3e4dbbfc-d3d1-4e69-bd24-3e842b9c73d1] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.614 ms [CID: 3e4dbbfc-d3d1-4e69-bd24-3e842b9c73d1]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[41997472-7ed9-41ac-b5f6-63c36153c4c7] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.710 ms [CID: 41997472-7ed9-41ac-b5f6-63c36153c4c7]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.539 ms [CID: 12693204-5923-4a1e-ad37-c49a17cde864]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[0f59acd1-2232-4031-9d33-b29ab6ed0412] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.789 ms [CID: 0f59acd1-2232-4031-9d33-b29ab6ed0412]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[fb3081f6-5f58-4f14-aaa0-57777587d7b9] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.841 ms [CID: fb3081f6-5f58-4f14-aaa0-57777587d7b9]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.794 ms [CID: 7709d978-a8a4-46a8-b419-3f370533b7e3]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[97052500-c6ee-4060-bfe4-9021db921a35] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.626 ms [CID: 97052500-c6ee-4060-bfe4-9021db921a35]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[4ead4f5b-72f0-4dfe-b7f0-8a965183c936] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.730 ms [CID: 4ead4f5b-72f0-4dfe-b7f0-8a965183c936]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.720 ms [CID: 108d9ef8-5e53-40fd-88ec-53fae05530ee]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[b739a2e2-7f46-4e3c-bac3-425570b8e470] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.726 ms [CID: b739a2e2-7f46-4e3c-bac3-425570b8e470]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[7d3e1146-7c49-40f5-9410-847eddade550] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.590 ms [CID: 7d3e1146-7c49-40f5-9410-847eddade550]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.675 ms [CID: e070fbf1-934a-422a-a631-09334ae8355b]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[083ac83e-25fa-458b-a514-44d3bf9fa013] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.708 ms [CID: 083ac83e-25fa-458b-a514-44d3bf9fa013]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[ae5b7f5d-dfc3-4144-8f5c-e2b615f5d732] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.601 ms [CID: ae5b7f5d-dfc3-4144-8f5c-e2b615f5d732]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.555 ms [CID: 3891ef3c-3712-4013-ab82-dcee167c8e4e]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[37cb5c7e-8582-4266-8ecf-f79d5d759ed5] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.734 ms [CID: 37cb5c7e-8582-4266-8ecf-f79d5d759ed5]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[1861862c-a3a4-4df7-a725-73a7e10b867e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.591 ms [CID: 1861862c-a3a4-4df7-a725-73a7e10b867e]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.457 ms [CID: 4894d29f-e5a5-4776-b5f9-f69dcf0de5e2]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[0829b96f-21df-419a-bee7-ce6e7d0d5a97] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.646 ms [CID: 0829b96f-21df-419a-bee7-ce6e7d0d5a97]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[1a566237-42f3-4140-8c90-eee02ab60932] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.751 ms [CID: 1a566237-42f3-4140-8c90-eee02ab60932]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.494 ms [CID: 467284e8-b553-4165-aa25-194992eef03d]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[cc89a4f6-873b-478c-8236-0b0edad5731f] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.825 ms [CID: cc89a4f6-873b-478c-8236-0b0edad5731f]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[4ffabb8f-33eb-4947-af98-89b88a8793a5] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.684 ms [CID: 4ffabb8f-33eb-4947-af98-89b88a8793a5]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.506 ms [CID: 8f383e8c-745f-46d4-a79f-dd418a7aa024]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[22e6578f-0ff1-4fbe-b0c1-be345537ab04] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.628 ms [CID: 22e6578f-0ff1-4fbe-b0c1-be345537ab04]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[f1100c96-4f79-4457-bfcb-639e54f825e2] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.694 ms [CID: f1100c96-4f79-4457-bfcb-639e54f825e2]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.546 ms [CID: 0fd70af9-3131-4132-91b1-2ab8af311201]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[670532fc-cdff-4f69-ab6f-9affd4bced6e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.627 ms [CID: 670532fc-cdff-4f69-ab6f-9affd4bced6e]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[e96fa700-0d5e-4f9e-a499-e9ab1d672787] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.637 ms [CID: e96fa700-0d5e-4f9e-a499-e9ab1d672787]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.514 ms [CID: a46cc11a-2a20-4c9b-88da-586cffe31bf1]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[14348fdb-9a20-4a0e-890b-4f0551c73157] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.405 ms [CID: 14348fdb-9a20-4a0e-890b-4f0551c73157]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[24cc6c3a-6e15-4652-bb7a-280ccf913b18] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.764 ms [CID: 24cc6c3a-6e15-4652-bb7a-280ccf913b18]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 2.708 ms [CID: 86e85d58-b89c-44c9-a82e-a63ea92c6e3a]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[74ea47d7-b6b5-4c01-88ff-d49bb1a8b37a] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.841 ms [CID: 74ea47d7-b6b5-4c01-88ff-d49bb1a8b37a]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[db8f3512-1015-485c-86b6-af548b2b43e2] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.723 ms [CID: db8f3512-1015-485c-86b6-af548b2b43e2]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 1.581 ms [CID: 32605720-8922-438a-8bdf-574259a93346]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[1fdceeb7-fd79-4b7d-849e-0d976c3f006d] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.789 ms [CID: 1fdceeb7-fd79-4b7d-849e-0d976c3f006d]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[01e03383-f1ae-4845-a5eb-a31e75f61690] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.811 ms [CID: 01e03383-f1ae-4845-a5eb-a31e75f61690]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.557 ms [CID: 1476e0bb-5080-4eb7-bc76-becd591217c7]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[9a659fb2-0741-4963-b917-9bcf7b1bc990] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.732 ms [CID: 9a659fb2-0741-4963-b917-9bcf7b1bc990]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[9f4ec2cc-7e78-4bbb-8304-af11b0d747be] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.038 ms [CID: 9f4ec2cc-7e78-4bbb-8304-af11b0d747be]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:12"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.596 ms [CID: b6bf68cc-6373-487b-8864-8cf9f74f3687]","timestamp":"2026-04-23 16:53:12"}
+{"level":"warn","message":"[00ddd371-0a9e-48f5-a288-3b271fc9a90e] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.614 ms [CID: 00ddd371-0a9e-48f5-a288-3b271fc9a90e]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[c52bcbd5-2e9c-4ab1-b1e6-6d59b211b5a0] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.618 ms [CID: c52bcbd5-2e9c-4ab1-b1e6-6d59b211b5a0]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.467 ms [CID: 2611aa5e-54bd-4a5c-8a30-f9af3aa939a5]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[a73494ec-a006-4850-818c-53ecd3d4c50d] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.560 ms [CID: a73494ec-a006-4850-818c-53ecd3d4c50d]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[05cf1cfa-48cc-485d-aa80-247a2e249315] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.779 ms [CID: 05cf1cfa-48cc-485d-aa80-247a2e249315]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.653 ms [CID: d1b4e137-155f-4e3f-8fdb-53f7347d404d]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[ac13d1e8-da24-41b2-aaa7-43a393442cbf] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.655 ms [CID: ac13d1e8-da24-41b2-aaa7-43a393442cbf]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[bc0dfa7a-72bd-4182-a61f-2aa7d66fe295] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.550 ms [CID: bc0dfa7a-72bd-4182-a61f-2aa7d66fe295]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.605 ms [CID: 63a00d01-1d7c-4d9f-8187-242d4fc12095]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[458e2471-e677-40ce-9a79-8ad646c8f196] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.660 ms [CID: 458e2471-e677-40ce-9a79-8ad646c8f196]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[f388173e-34b5-49f0-aca6-39389f165f72] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.600 ms [CID: f388173e-34b5-49f0-aca6-39389f165f72]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.494 ms [CID: 1fca8473-6cbb-4391-9cfd-6a2290ad1faa]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[70b089c1-1158-4005-b01d-851053a59025] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.614 ms [CID: 70b089c1-1158-4005-b01d-851053a59025]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[fa60b9c3-dbcc-4dca-a10e-e31d06a848f2] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 1.351 ms [CID: fa60b9c3-dbcc-4dca-a10e-e31d06a848f2]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.612 ms [CID: d8191027-40f2-4ddd-a698-50fe9863302c]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[7e889bf9-220f-422a-9910-50fbb845304c] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.682 ms [CID: 7e889bf9-220f-422a-9910-50fbb845304c]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"[5e592d66-c6c8-4861-a346-9758a9233ea4] 401 - No token provided. Please login. - /api/v1/auth/me - GET - ::1","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"GET /api/v1/auth/me 401 1548 - 0.673 ms [CID: 5e592d66-c6c8-4861-a346-9758a9233ea4]","timestamp":"2026-04-23 16:53:13"}
+{"level":"warn","message":"Auth threshold breached by ::1 for unknown — Emitting AUTH_BREACH","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"POST /api/v1/auth/refresh-token 429 90 - 0.527 ms [CID: 29c34b93-e866-4e40-975d-7a4e36a05fd6]","timestamp":"2026-04-23 16:53:13"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-23 16:54:22"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-23 16:54:22"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-23 16:54:22"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-23 16:54:23"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-23 16:54:23"}

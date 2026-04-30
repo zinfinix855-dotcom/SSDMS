@@ -1,0 +1,30 @@
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-11 12:56:53"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:53"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🤖 [AI Worker] Online and ready for scoring...","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🤖 [Maintenance Worker] Online and listening for schedules...","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🤖 [Bulk Worker] Online and listening for batch operations...","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"📊 ReportWorker: Lifecycle active","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🛡️ securitySubscriber: Listening for security events","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"🚀 Enterprise Server running on port 5000 in development mode","timestamp":"2026-04-11 12:56:53"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:53"}
+{"level":"info","message":"SLA Service: Initialized with rules","timestamp":"2026-04-11 12:56:53"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:53"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:54"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 12:56:54"}
+{"level":"warn","message":"Redis reconnection limit reached, running in fallback mode.","timestamp":"2026-04-11 12:56:54"}
+{"level":"info","message":"Executing: CREATE INDEX idx_ai_feedback_visit ON ai_feedback(...","timestamp":"2026-04-11 13:33:46"}
+{"level":"error","message":"❌ Migration failed:","timestamp":"2026-04-11 13:33:46"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-11 13:42:08"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-11 13:42:08"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-11 13:42:08"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 13:42:08"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-11 13:42:08"}
+{"level":"info","message":"🚀 QueueService: BullMQ initialized (SLA, AI, Maintenance, Bulk, Reports)","timestamp":"2026-04-11 13:42:22"}
+{"level":"info","message":"⚡ MonitoringService initialized — observing EventBus","timestamp":"2026-04-11 13:42:22"}
+{"level":"info","message":"Environment variables validated successfully.","timestamp":"2026-04-11 13:42:22"}
+{"level":"error","message":"Redis connection error: connect ECONNREFUSED 127.0.0.1:6379","timestamp":"2026-04-11 13:42:22"}
+{"level":"info","message":"🤖 [SLA Worker] Online and listening for deadlines...","timestamp":"2026-04-11 13:42:22"}

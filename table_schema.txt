@@ -1,0 +1,20 @@
+CREATE TABLE `files` (
+  `visit_number` varchar(20) NOT NULL,
+  `patient_name` varchar(150) NOT NULL,
+  `mr_number` varchar(50) NOT NULL,
+  `cnic` varchar(20) NOT NULL,
+  `cnic_image_url` varchar(255) DEFAULT NULL,
+  `hospital_name` varchar(150) DEFAULT NULL,
+  `admission_date` date DEFAULT NULL,
+  `current_stage` enum('Admission','Discharge','Pre-Approval','Approval','File Verification','E-Claim','E-Claim Verification','Finance','Segregation','Indexation') NOT NULL DEFAULT 'Admission',
+  `status` enum('In Progress','Completed','Objected','Returned') DEFAULT 'In Progress',
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `created_by` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`visit_number`),
+  KEY `created_by` (`created_by`),
+  KEY `idx_files_stage` (`current_stage`),
+  KEY `idx_files_status` (`status`),
+  KEY `idx_files_mr` (`mr_number`),
+  CONSTRAINT `files_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `users` (`employee_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

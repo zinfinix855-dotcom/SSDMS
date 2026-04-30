@@ -1,0 +1,69 @@
+
+> ssdms-backend@1.0.0 test
+> jest tests/unit/Security.test.js tests/integration/WorkflowIntegrity.test.js
+
+PASS tests/unit/Security.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.3.1] injecting env (14) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+
+      at _log (node_modules/dotenv/lib/main.js:139:11)
+
+    console.log
+      [dotenv@17.3.1] injecting env (0) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+
+      at _log (node_modules/dotenv/lib/main.js:139:11)
+
+FAIL tests/integration/WorkflowIntegrity.test.js
+  ● Console
+
+    console.log
+      [dotenv@17.3.1] injecting env (14) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+
+      at _log (node_modules/dotenv/lib/main.js:139:11)
+
+    console.log
+      BEFORE_MOVE_STAGE: Discharge
+
+      at Object.log (tests/integration/WorkflowIntegrity.test.js:91:17)
+
+    console.error
+      FORWARD_FILE_ERROR: Invalid JSON text: "The document root must not be followed by other values." at position 7 in value for column 'section_entries.data'.
+
+    [0m [90m  96 |[39m             console[33m.[39mlog([32m'FORWARD_FILE_RESULT:'[39m[33m,[39m [33mJSON[39m[33m.[39mstringify(result))[33m;[39m
+     [90m  97 |[39m         } [36mcatch[39m (err) {
+    [31m[1m>[22m[39m[90m  98 |[39m             console[33m.[39merror([32m'FORWARD_FILE_ERROR:'[39m[33m,[39m err[33m.[39mmessage)[33m;[39m
+     [90m     |[39m                     [31m[1m^[22m[39m
+     [90m  99 |[39m             [36mthrow[39m err[33m;[39m
+     [90m 100 |[39m         }
+     [90m 101 |[39m[0m
+
+      at Object.error (tests/integration/WorkflowIntegrity.test.js:98:21)
+
+  ● Workflow Integration & Hardening › should maintain immutable audit chain in event_store
+
+    Invalid JSON text: "The document root must not be followed by other values." at position 7 in value for column 'section_entries.data'.
+
+    [0m [90m 226 |[39m         [36mconst[39m encryptedData [33m=[39m encrypt([33mJSON[39m[33m.[39mstringify(data))[33m;[39m
+     [90m 227 |[39m
+    [31m[1m>[22m[39m[90m 228 |[39m         [36mawait[39m conn[33m.[39mquery(
+     [90m     |[39m                    [31m[1m^[22m[39m
+     [90m 229 |[39m             [32m`INSERT INTO section_entries (visit_number, stage_name, data, entered_by) [39m
+     [90m 230 |[39m [32m             VALUES (?, ?, ?, ?)`[39m[33m,[39m
+     [90m 231 |[39m             [visitNumber[33m,[39m stage[33m,[39m encryptedData[33m,[39m userId][0m
+
+      at FileRepository.query [as addSectionEntry] (repositories/FileRepository.js:228:20)
+      at services/WorkflowService.js:80:33
+      at services/WorkflowService.js:39:20
+      at FileRepository.transaction (repositories/BaseRepository.js:61:28)
+      at WorkflowService.executeWorkflowTask (services/WorkflowService.js:38:24)
+      at WorkflowService.forwardFile (services/WorkflowService.js:51:16)
+      at Object.<anonymous> (tests/integration/WorkflowIntegrity.test.js:95:28)
+
+A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        2.792 s, estimated 3 s
+Ran all test suites matching tests/unit/Security.test.js|tests/integration/WorkflowIntegrity.test.js.

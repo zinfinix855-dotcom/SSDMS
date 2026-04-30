@@ -1,0 +1,13 @@
+{
+  "name": "ssdms",
+  "version": "1.0.0",
+  "description": "Sehat Sahulat Department Management System",
+  "scripts": {
+    "backend": "npm run dev --prefix ssdms-backend",
+    "frontend": "npm run dev --prefix ssdms-frontend",
+    "dev": "start cmd /k \"npm run dev --prefix ssdms-backend\" && npm run dev --prefix ssdms-frontend"
+  },
+  "dependencies": {
+    "mysql2": "^3.18.2"
+  }
+}

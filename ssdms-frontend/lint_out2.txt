@@ -1,0 +1,38 @@
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\hooks\useSocket.js
+  14:39  error  Compilation Skipped: Existing memoization could not be preserved
+
+React Compiler has skipped optimizing this component because the existing manual memoization could not be preserved. The inferred dependencies did not match the manually specified dependencies, which could cause the value to change more or less frequently than expected. The inferred dependency was `onEvent`, but the source dependencies were []. Inferred dependency not present in source.
+
+  12 |     const socketRef = useRef(null);
+  13 |
+> 14 |     const stableOnEvent = useCallback((event) => onEvent(event), []); // eslint-disable-line react-hooks/exhaustive-deps
+     |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^ Could not preserve existing manual memoization
+  15 |
+  16 |     useEffect(() => {
+  17 |         const socket = io(SOCKET_URL, {  react-hooks/preserve-manual-memoization
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\pages\Dashboard.jsx
+  71:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  69 |
+  70 |     useEffect(() => {
+> 71 |         fetchStats();
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  72 |     }, [fetchStats]);
+  73 |
+  74 |     // ── Real-time event subscription via WebSocket ──  react-hooks/set-state-in-effect
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\pages\StagePage.jsx
+   2:21  error    'useNavigate' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                  no-unused-vars
+  45:9   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/set-state-in-effect')
+
+✖ 4 problems (3 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+

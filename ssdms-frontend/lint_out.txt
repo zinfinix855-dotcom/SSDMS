@@ -1,0 +1,88 @@
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\components\Sidebar.jsx
+   1:10  error  'useState' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+  50:67  error  'setIsCollapsed' is defined but never used                                       no-unused-vars
+  89:18  error  'error' is defined but never used                                                no-unused-vars
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\components\dashboard\StatCard.jsx
+  3:60  error  'Icon' is defined but never used  no-unused-vars
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\components\workflow\SegregationForm.jsx
+  50:58  error  'Icon' is defined but never used  no-unused-vars
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\components\workflow\VerificationForm.jsx
+  2:10  error  'useState' is defined but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\context\AuthContext.jsx
+  45:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\hooks\useSocket.js
+  14:39  error  Error: Expected the first argument to be an inline function expression
+
+Expected the first argument to be an inline function expression.
+
+  12 |     const socketRef = useRef(null);
+  13 |
+> 14 |     const stableOnEvent = useCallback(onEvent, []); // eslint-disable-line react-hooks/exhaustive-deps
+     |                                       ^^^^^^^ Expected the first argument to be an inline function expression
+  15 |
+  16 |     useEffect(() => {
+  17 |         const socket = io(SOCKET_URL, {  react-hooks/use-memo
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\hooks\useStageWorkflow.js
+  23:18  error  'error' is defined but never used  no-unused-vars
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\pages\Dashboard.jsx
+  69:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  67 |
+  68 |     useEffect(() => {
+> 69 |         setLoading(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  70 |         fetchStats();
+  71 |         setLoading(false);
+  72 |     }, [fetchStats]);  react-hooks/set-state-in-effect
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\pages\LogsPage.jsx
+  27:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  25 |
+  26 |     useEffect(() => {
+> 27 |         setLoading(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |         API.get('/dashboard/logs', { params: { page, limit: LIMIT } })
+  29 |             .then(res => {
+  30 |                 setLogs(res.data.logs || []);  react-hooks/set-state-in-effect
+
+D:\Projects\SSDMS\Sehat Sahulat Deparment Managment System\ssdms-frontend\src\pages\StagePage.jsx
+  25:11  error  'navigate' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         no-unused-vars
+  47:9   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  45 |     useEffect(() => {
+  46 |         setFileData(null);
+> 47 |         setSearchTerm('');
+     |         ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  48 |         setFormData({});
+  49 |         setRemarks('');
+  50 |         setIsNewAdmission(stageName === 'Admission');  react-hooks/set-state-in-effect
+
+✖ 13 problems (13 errors, 0 warnings)
+

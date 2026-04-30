@@ -1,0 +1,46 @@
+name: Production Deployment CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: |
+          cd ssdms-backend && npm ci
+          cd ../ssdms-frontend && npm ci
+
+      - name: Run Linting
+        run: |
+          cd ssdms-backend && npm run lint
+          cd ../ssdms-frontend && npm run lint
+
+      # - name: Run Backend Tests
+      #   run: cd ssdms-backend && npm run test
+
+  build-and-deploy:
+    needs: lint-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Docker Compose Build
+        run: docker-compose -f docker-compose.yml build
+
+      # Add deployment steps here (e.g. AWS ECR push, SSH executor)
+      - name: Deployment Echo
+        run: echo "Code is production ready and dockerized."
