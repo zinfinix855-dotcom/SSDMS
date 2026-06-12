@@ -1,6 +1,7 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
+import { AnimatePresence } from 'framer-motion';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -51,10 +52,12 @@ function PrivateRoute({ children, adminOnly = false, modOk = false }) {
 
 function AppRoutes() {
   const { user } = useAuth();
+  const location = useLocation();
 
   return (
     <Suspense fallback={<PageSkeleton />}>
-      <Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
         {/* Public */}
         <Route
           path="/login"
@@ -87,17 +90,25 @@ function AppRoutes() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Routes>
+      </AnimatePresence>
     </Suspense>
   );
 }
 
+import { ThemeProvider } from './context/ThemeContext';
+import { HospitalProvider } from './context/HospitalContext';
+
 export default function App() {
   return (
     <BrowserRouter>
-      <AuthProvider>
-        <Toaster position="top-right" />
-        <AppRoutes />
-      </AuthProvider>
+      <ThemeProvider>
+        <AuthProvider>
+          <HospitalProvider>
+            <Toaster position="top-right" />
+            <AppRoutes />
+          </HospitalProvider>
+        </AuthProvider>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { ChevronRight, ArrowRightCircle, ShieldCheck } from 'lucide-react';
+import { Shield, ChevronRight, Activity } from 'lucide-react';
 import { STAGE_META } from '../../constants/stages';
 
 export default function PipelineView({ stats }) {
@@ -9,88 +9,102 @@ export default function PipelineView({ stats }) {
     const getStageCount = (stage) =>
         stats?.byStage?.find(s => s.current_stage === stage)?.count ?? 0;
 
+    const total = stats?.totalFiles || 1;
+
     return (
-        <div className="glass-card overflow-hidden border-0 shadow-lg" style={{ background: 'white' }}>
-            <div className="p-4 border-bottom bg-primary bg-opacity-5 d-flex justify-content-between align-items-center">
-                <div className="d-flex align-items-center gap-3">
-                    <div className="p-2 rounded-3 bg-primary text-white shadow-sm">
-                        <ShieldCheck size={20} />
+        <div className="zenith-card p-0 overflow-hidden">
+            <div className="p-6 border-bottom border-light d-flex justify-content-between align-items-center bg-card">
+                <div className="d-flex align-items-center gap-4">
+                    <div className="icon-badge-sm">
+                        <Activity size={18} />
                     </div>
                     <div>
-                        <h5 className="fw-800 mb-0">Workflow Throughput Pipeline</h5>
-                        <p className="extra-small text-muted mb-0 fw-700 text-uppercase tracking-wider">Departmental Load Distribution</p>
+                        <h4 className="m-0 text-main" style={{ fontSize: '16px' }}>Orchestration Pipeline</h4>
+                        <p className="m-0 text-dim extra-small fw-600">LIVE DEPARTMENTAL LOAD DISTRIBUTION</p>
                     </div>
                 </div>
-                <div className="d-flex gap-3">
-                    <div className="d-flex align-items-center gap-2 extra-small fw-800 text-success">
-                        <div className="bg-success rounded-circle shadow-sm" style={{ width: 10, height: 10 }} /> 
-                        SLA SECURED
-                    </div>
-                    <div className="d-flex align-items-center gap-2 extra-small fw-800 text-danger">
-                        <div className="bg-danger rounded-circle shadow-sm glowing-border" style={{ width: 10, height: 10 }} /> 
-                        LOAD ALERT
+                <div className="pipeline-legend d-flex gap-4">
+                    <div className="d-flex align-items-center gap-2 extra-small fw-800 text-accent">
+                        <span className="dot-pulse-accent" /> SLA NOMINAL
                     </div>
                 </div>
             </div>
-            
-            <div className="p-3">
-                <div className="pipeline-scroll custom-scrollbar d-flex flex-row flex-nowrap align-items-center gap-0 pb-3" style={{ overflowX: 'auto', width: '100%', minHeight: '150px' }}>
-                    {STAGES.map((stage, index) => {
+
+            <div className="p-8">
+                <div className="pipeline-track d-flex align-items-end gap-2">
+                    {STAGES.map((stage) => {
                         const count = getStageCount(stage);
-                        const isCritical = count > 20;
+                        const percentage = (count / total) * 100;
                         const meta = STAGE_META[stage];
-                        
+
                         return (
                             <div 
                                 key={stage} 
-                                className="pipeline-step-v2 d-flex align-items-center flex-shrink-0"
+                                className="pipeline-bar-wrapper"
                                 onClick={() => navigate(`/stage/${stage}`)}
-                                style={{ cursor: 'pointer' }}
                             >
-                                <div className="text-center" style={{ width: 100 }}>
-                                    <div 
-                                        className={`d-flex flex-column justify-content-center align-items-center mb-2 shadow-sm transition-all pipeline-dot`}
-                                        style={{ 
-                                            width: 60, 
-                                            height: 60, 
-                                            borderRadius: '16px', 
-                                            margin: '0 auto', 
-                                            background: isCritical ? '#fff1f2' : '#ffffff',
-                                            border: `2px solid ${isCritical ? '#ef4444' : '#e2e8f0'}`,
-                                            transform: 'rotate(45deg)'
-                                        }}
-                                    >
-                                        <div style={{ transform: 'rotate(-45deg)' }}>
-                                            <div className={`h4 fw-900 mb-0 ${isCritical ? 'text-danger' : ''}`} style={{ color: isCritical ? '#ef4444' : meta.color }}>
-                                                {count}
-                                            </div>
-                                            <div className="extra-small opacity-50 fw-800" style={{ fontSize: '9px' }}>FILES</div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div className="fw-800 text-dark tracking-tighter text-uppercase" style={{ fontSize: '10px' }}>
-                                        {stage}
-                                    </div>
+                                <div className="bar-hover-info">
+                                    <p className="m-0 fw-800" style={{ color: meta.color }}>{stage}</p>
+                                    <p className="m-0 extra-small">{count} FILES ACTIVE</p>
                                 </div>
-
-                                {index < STAGES.length - 1 && (
-                                    <div className="px-1" style={{ marginTop: '-15px' }}>
-                                        <div className="d-flex align-items-center" style={{ width: 20, height: 1, background: '#e2e8f0' }}>
-                                            <ChevronRight size={14} className="text-muted opacity-25" style={{ marginLeft: 15 }} />
-                                        </div>
-                                    </div>
-                                )}
+                                <div className="pipeline-bar" style={{ height: `${Math.max(percentage, 5)}%`, background: meta.color }}>
+                                    <div className="bar-glow" style={{ background: meta.color }} />
+                                </div>
                             </div>
                         );
                     })}
                 </div>
+                
+                <div className="pipeline-labels mt-6 pt-6 border-top border-light d-flex justify-content-between">
+                    {STAGES.map(stage => (
+                        <div key={stage} className="stage-label-vertical">
+                            <span>{stage}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
-            
-            <div className="p-3 bg-light border-top text-center">
-                <button className="btn btn-sm btn-white rounded-pill px-4 border shadow-sm fw-800 extra-small d-inline-flex align-items-center gap-2">
-                    INITIATE BATCH ACTION <ArrowRightCircle size={14} className="text-primary" />
-                </button>
-            </div>
+
+            <style>{`
+                .icon-badge-sm {
+                    width: 36px; height: 36px; border-radius: 10px; background: rgba(59, 130, 246, 0.1);
+                    display: flex; align-items: center; justify-content: center; color: var(--primary);
+                }
+                .pipeline-track { height: 200px; padding-top: 40px; }
+                .pipeline-bar-wrapper {
+                    flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;
+                    position: relative; cursor: pointer;
+                }
+                .pipeline-bar {
+                    width: 100%; border-radius: 6px 6px 0 0; transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+                    position: relative; opacity: 0.6;
+                }
+                .pipeline-bar-wrapper:hover .pipeline-bar { opacity: 1; transform: scaleX(1.1); }
+                .bar-glow {
+                    position: absolute; inset: 0; filter: blur(12px); opacity: 0; transition: 0.3s;
+                }
+                .pipeline-bar-wrapper:hover .bar-glow { opacity: 0.4; }
+                
+                .bar-hover-info {
+                    position: absolute; top: 0; left: 50%; transform: translate(-50%, -100%) scale(0.9);
+                    background: var(--bg-surface); border: 1px solid var(--border-light);
+                    padding: 8px 12px; border-radius: 8px; opacity: 0; transition: 0.3s;
+                    pointer-events: none; z-index: 10; white-space: nowrap; box-shadow: var(--shadow-premium);
+                }
+                .pipeline-bar-wrapper:hover .bar-hover-info { opacity: 1; transform: translate(-50%, -10px) scale(1); }
+                
+                .stage-label-vertical {
+                    flex: 1; display: flex; justify-content: center;
+                }
+                .stage-label-vertical span {
+                    writing-mode: vertical-rl; transform: rotate(180deg);
+                    font-size: 8px; font-weight: 800; color: var(--text-dim); text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                }
+                .dot-pulse-accent {
+                    width: 8px; height: 8px; background: var(--accent); border-radius: 50%;
+                    animation: status-pulse 2s infinite;
+                }
+            `}</style>
         </div>
     );
 }

@@ -36,8 +36,10 @@ class MonitoringService {
         logger.warn(`[SENSITIVE] Workflow override: ${visitNumber} from ${from} → ${to} by ${userId}. Reason: ${reason}`);
     }
 
-    handleBulkAction({ action, count, userId }) {
-        logger.info(`[MONITOR] Bulk action '${action}' completed for ${count} files (by ${userId})`);
+    handleBulkAction({ action, count, successCount, failedCount, userId }) {
+        const total = count || (successCount + failedCount) || 0;
+        const details = successCount !== undefined ? ` (Success: ${successCount}, Failed: ${failedCount})` : '';
+        logger.info(`[MONITOR] Bulk action '${action}' completed for ${total} files${details} (by ${userId})`);
     }
 }
 

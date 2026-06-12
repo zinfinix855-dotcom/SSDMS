@@ -1,31 +1,27 @@
 import { useState } from 'react';
-import Sidebar from './Sidebar';
-import Topbar from './Topbar';
-import Breadcrumbs from './common/Breadcrumbs';
+import ZenithSidebar from './ZenithSidebar';
+import ZenithHeader from './ZenithHeader';
 
 export default function Layout({ children, title }) {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(false);
 
     return (
-        <div className="d-flex">
-            <Sidebar 
-                isOpen={isSidebarOpen} 
-                setIsOpen={setIsSidebarOpen} 
-                isCollapsed={isCollapsed}
-                setIsCollapsed={setIsCollapsed}
-            />
-            <div className={`ssdms-main ${isSidebarOpen ? 'shifted' : ''} ${isCollapsed ? 'collapsed' : ''}`} style={{ marginLeft: isCollapsed ? '80px' : '200px' }}>
-                <Topbar 
-                    title={title} 
-                    onToggleMobile={() => setIsSidebarOpen(!isSidebarOpen)} 
-                    onToggleDesktop={() => setIsCollapsed(!isCollapsed)}
-                />
-                <div className="p-2 animate-fade-in">
-                    <Breadcrumbs />
-                    {children}
+        <div className="zenith-app">
+            <ZenithSidebar collapsed={collapsed} setCollapsed={setCollapsed} />
+            
+            <main className="zenith-main" style={{ marginLeft: collapsed ? 'var(--sidebar-w-collapsed)' : 'var(--sidebar-w)' }}>
+                <ZenithHeader title={title} />
+                
+                <div className="p-8 animate-slide-in">
+                    <div className="zenith-container">
+                        {children}
+                    </div>
                 </div>
-            </div>
+            </main>
+
+            <style>{`
+                .p-8 { padding: 2rem 2.5rem; }
+            `}</style>
         </div>
     );
 }

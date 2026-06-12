@@ -8,6 +8,7 @@ const EventBus = require('./EventBus');
 const { generalCache } = require('../utils/Cache');
 const WorkflowRepository = require('../repositories/WorkflowRepository');
 const QueueService = require('./QueueService');
+const VersionService = require('./VersionService');
 
 class WorkflowService {
     /**
@@ -78,6 +79,9 @@ class WorkflowService {
 
             // 5. ATOMIC DATA UPDATES
             const diff = data ? await FileRepository.addSectionEntry(file.visit_number, currentStage, data, userId, connection) : null;
+            if (data) {
+                await VersionService.createVersionSnapshot(file.visit_number, currentStage, data, userId, 'update', connection);
+            }
             
             // 5b. Evaluate AI Prediction Accuracy BEFORE updating Stage
             if (file.predicted_completion_hours > 0) {
@@ -226,6 +230,7 @@ class WorkflowService {
             }
 
             const diff = await FileRepository.addSectionEntry(visitNumber, stage, data, userId, connection);
+            await VersionService.createVersionSnapshot(visitNumber, stage, data, userId, 'update', connection);
             const { nextStage, fileStatus } = await workflowEngine.getNextState(stage, data);
 
             if (!nextStage) {

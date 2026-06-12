@@ -1,56 +1,52 @@
-import { TrendingUp, TrendingDown, ArrowRight } from 'lucide-react';
+import { TrendingUp, TrendingDown, ArrowUpRight } from 'lucide-react';
 
-// eslint-disable-next-line no-unused-vars
 export default function StatCard({ label, value, sublabel, Icon, color, bg, trend, trendValue, onClick }) {
-    const isPositive = trend === 'up';
-
     return (
-        <div 
-            className="glass-card p-4 h-100 cursor-pointer stat-card-hover border-0 shadow-sm"
-            onClick={onClick}
-            style={{ 
-                background: `linear-gradient(145deg, #ffffff 0%, ${bg}22 100%)`,
-                transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                position: 'relative',
-                overflow: 'hidden'
-            }}
-        >
-            {/* Subtle background glow */}
-            <div className="position-absolute" style={{ 
-                top: '-20%', 
-                right: '-20%', 
-                width: '150px', 
-                height: '150px', 
-                background: `radial-gradient(circle, ${color}11 0%, transparent 70%)`,
-                borderRadius: '50%',
-                pointerEvents: 'none'
-            }} />
-
-            <div className="d-flex justify-content-between align-items-start mb-3 position-relative z-index-1">
-                <div className="p-3 rounded-4 shadow-sm border border-white" style={{ background: bg, color: color }}>
+        <div className="zenith-card stat-card-premium" onClick={onClick}>
+            <div className="d-flex justify-content-between align-items-start mb-6">
+                <div className="stat-icon-wrapper" style={{ background: bg, color: color }}>
                     <Icon size={24} />
                 </div>
-                {trend && (
-                    <div className={`d-flex align-items-center gap-1 extra-small fw-800 px-2 py-1 rounded-pill ${isPositive ? 'bg-success bg-opacity-10 text-success' : 'bg-danger bg-opacity-10 text-danger'}`}>
-                        {isPositive ? <TrendingUp size={12} /> : <TrendingDown size={12} />}
-                        {trendValue}%
-                    </div>
-                )}
-            </div>
-            
-            <div className="mb-3 position-relative z-index-1">
-                <div className="stat-value fw-900 mb-0" style={{ fontSize: '1.75rem', letterSpacing: '-1px', color: '#0f172a' }}>
-                    {value}
+                <div className={`trend-indicator ${trend}`}>
+                    {trend === 'up' ? <TrendingUp size={14} /> : <TrendingDown size={14} />}
+                    <span>{trendValue}%</span>
                 </div>
-                <div className="text-muted extra-small fw-800 text-uppercase tracking-wider" style={{ fontSize: '10px' }}>{label}</div>
             </div>
 
-            <div className="d-flex align-items-center justify-content-between border-top border-white border-opacity-50 pt-3 mt-auto position-relative z-index-1">
-                <span className="extra-small text-muted fw-700">{sublabel}</span>
-                <div className="p-2 rounded-circle bg-white border shadow-sm transition-all arrow-indicator">
-                    <ArrowRight size={14} style={{ color }} />
-                </div>
+            <div className="mb-4">
+                <h3 className="stat-value display-font m-0">{value}</h3>
+                <p className="stat-label m-0 text-dim fw-700 text-uppercase tracking-widest">{label}</p>
             </div>
+
+            <div className="d-flex align-items-center justify-content-between mt-6 pt-6 border-top" style={{ borderColor: 'var(--border-light)' }}>
+                <span className="extra-small text-dim fw-600">{sublabel}</span>
+                <ArrowUpRight size={16} className="text-primary opacity-0 icon-reveal" />
+            </div>
+
+            <style>{`
+                .stat-card-premium { cursor: pointer; position: relative; overflow: hidden; }
+                .stat-icon-wrapper {
+                    width: 52px; height: 52px; border-radius: 14px; 
+                    display: flex; align-items: center; justify-content: center;
+                    box-shadow: inset 0 0 20px rgba(255,255,255,0.05);
+                }
+                .stat-value { font-size: 32px; letter-spacing: -0.04em; }
+                .stat-label { font-size: 10px; }
+                .trend-indicator {
+                    display: flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 99px;
+                    font-size: 11px; font-weight: 800;
+                }
+                .trend-indicator.up { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+                .trend-indicator.down { background: rgba(239, 68, 68, 0.1); color: #ef4444; }
+                
+                .stat-card-premium:hover .icon-reveal { opacity: 1; transform: translate(2px, -2px); }
+                .stat-card-premium::before {
+                    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+                    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+                    transform: translateX(-100%); transition: transform 0.6s ease;
+                }
+                .stat-card-premium:hover::before { transform: translateX(100%); }
+            `}</style>
         </div>
     );
 }

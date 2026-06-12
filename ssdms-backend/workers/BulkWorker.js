@@ -42,11 +42,12 @@ class BulkWorker {
 
             logger.info(`[Bulk Worker] Completed job ${job.id}. Success: ${results.success.length}, Failed: ${results.failed.length}`);
             
-            // FIX: Event name aligned to BULK_ACTION_COMPLETED — SocketService and Dashboard
-            // both listen for this name. The old BULK_JOB_COMPLETED was never forwarded.
+            // Event name aligned to BULK_ACTION_COMPLETED — SocketService and Dashboard
+            // both listen for this name. Payload includes total count for MonitoringService.
             EventBus.emit('BULK_ACTION_COMPLETED', {
                 jobId: job.id,
                 action,
+                count: visitNumbers.length,
                 successCount: results.success.length,
                 failedCount: results.failed.length,
                 failed: results.failed,

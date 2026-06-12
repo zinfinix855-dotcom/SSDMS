@@ -2,82 +2,96 @@ const fileService = require('../services/FileService');
 const workflowService = require('../services/WorkflowService');
 const summaryService = require('../services/SummaryService');
 const fhirService = require('../services/FhirService');
-const { sendSuccess, sendPaginated } = require('../utils/response');
 const asyncHandler = require('../utils/asyncHandler');
 const AppError = require('../utils/AppError');
+const BaseController = require('./BaseController');
 
-// @desc    Create Admission File
-// @route   POST /api/files/admission
-// @access  Private (Admission section)
-const createAdmission = asyncHandler(async (req, res, next) => {
-    const result = await fileService.createAdmission(req.body, req.user.employee_id);
-    return sendSuccess(res, result, 'File created successfully', 201);
-});
+/**
+ * FileController
+ * Orchestrates patient file lifecycle and workflow transitions.
+ */
+class FileController extends BaseController {
+    /**
+     * @desc    Create Admission File
+     * @route   POST /api/files/admission
+     */
+    createAdmission = asyncHandler(async (req, res) => {
+        const result = await fileService.createAdmission(req.body, req.user.employee_id);
+        return this.success(res, result, 'File created successfully', 201);
+    });
 
-// @desc    Get File by Visit Number (also supports ssc_visit_number lookup)
-// @route   GET /api/files/:visitNumber
-// @access  Private
-const getFile = asyncHandler(async (req, res, next) => {
-    const { visitNumber } = req.params;
-    const detail = await fileService.getFileDetail(visitNumber, req.user, req.ip);
-    
-    // Phase 6: Inject Smart Summary
-    const narrative = await summaryService.getFileNarrative(visitNumber);
-    detail.narrative = narrative;
+    /**
+     * @desc    Get File by Visit Number
+     * @route   GET /api/files/:visitNumber
+     */
+    getFile = asyncHandler(async (req, res) => {
+        const { visitNumber } = req.params;
+        const detail = await fileService.getFileDetail(visitNumber, req.user, req.ip);
+        
+        // Inject Smart Summary Narrative
+        const narrative = await summaryService.getFileNarrative(visitNumber);
+        detail.narrative = narrative;
 
-    return sendSuccess(res, detail, 'File detail retrieved');
-});
+        return this.success(res, detail, 'File detail retrieved');
+    });
 
-// @desc    Search Files (by visit_number, ssc_visit_number, cnic, patient_name, status)
-// @route   GET /api/files
-// @access  Private
-const searchFiles = asyncHandler(async (req, res, next) => {
-    const result = await fileService.searchFiles(req.query, req.user, req.ip);
-    const { files, total, page, limit } = result;
+    /**
+     * @desc    Search Files
+     * @route   GET /api/files
+     */
+    searchFiles = asyncHandler(async (req, res) => {
+        const result = await fileService.searchFiles(req.query, req.user, req.ip);
+        const { files, total, page, limit } = result;
 
-    return sendPaginated(res, files, page, limit, total, 'Search results retrieved');
-});
+        return res.status(200).json({
+            status: 'success',
+            data: files,
+            meta: { total, page, limit }
+        });
+    });
 
-// @desc    Get Section Entries for a file (by stage)
-// @route   GET /api/files/:visitNumber/sections
-// @access  Private
-const getSectionEntries = asyncHandler(async (req, res, next) => {
-    const { visitNumber } = req.params;
-    const result = await fileService.getParsedSectionEntries(visitNumber);
+    /**
+     * @desc    Get Section Entries for a file
+     * @route   GET /api/files/:visitNumber/sections
+     */
+    getSectionEntries = asyncHandler(async (req, res) => {
+        const { visitNumber } = req.params;
+        const result = await fileService.getParsedSectionEntries(visitNumber);
+        return this.success(res, result, 'Section archive entries retrieved');
+    });
 
-    return sendSuccess(res, result, 'Section archive entries retrieved');
-});
+    /**
+     * @desc    Get FHIR R4 Encounter resource
+     * @route   GET /api/files/:visitNumber/fhir
+     */
+    getFhirEncounter = asyncHandler(async (req, res) => {
+        const file = await fileService.getFileDetail(req.params.visitNumber, req.user, req.ip);
+        const fhirEncounter = fhirService.mapToEncounter(file);
+        
+        if (!fhirEncounter) {
+            throw new AppError('Failed to generate FHIR resource', 500);
+        }
 
-// @desc    Get FHIR R4 Encounter resource for a file
-// @route   GET /api/files/:visitNumber/fhir
-// @access  Private
-const getFhirEncounter = asyncHandler(async (req, res, next) => {
-    const file = await fileService.getFileDetail(req.params.visitNumber, req.user, req.ip);
-    const fhirEncounter = fhirService.mapToEncounter(file);
-    
-    if (!fhirEncounter) {
-        throw new AppError('Failed to generate FHIR resource', 500);
-    }
+        return this.success(res, fhirEncounter, 'FHIR Resource generated');
+    });
 
-    return sendSuccess(res, fhirEncounter, 'FHIR Resource generated');
-});
+    /**
+     * @desc    Complete a section/stage and auto-move file
+     * @route   POST /api/files/:visitNumber/complete
+     */
+    completeSection = asyncHandler(async (req, res) => {
+        const { visitNumber } = req.params;
+        const { stage, data, remarks } = req.body;
+        
+        const result = await workflowService.processStageCompletion(
+            visitNumber, 
+            stage, 
+            data, 
+            remarks, 
+            req.user.employee_id
+        );
+        return this.success(res, result, `Stage ${stage} completed successfully`);
+    });
+}
 
-// @desc    Complete a section/stage and auto-move file
-// @route   POST /api/files/:visitNumber/complete
-// @access  Private (Stage-specific)
-const completeSection = asyncHandler(async (req, res, next) => {
-    const { visitNumber } = req.params;
-    const { stage, data } = req.body;
-    
-    const result = await workflowService.processStageCompletion(visitNumber, stage, data, req.user.employee_id);
-    return sendSuccess(res, result, `Stage ${stage} completed and file moved successfully`);
-});
-
-module.exports = {
-    createAdmission,
-    getFile,
-    searchFiles,
-    getSectionEntries,
-    getFhirEncounter,
-    completeSection
-};
+module.exports = new FileController();

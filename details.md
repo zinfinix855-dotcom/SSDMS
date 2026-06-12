@@ -421,3 +421,14 @@ If you cannot log in with the default admin credentials:
 - **Recursive XSS Sanitization**: Custom `deepSanitize` engine scrubs complex JSON clinical blobs that standard middleware misses.
 - **Fail-Safe Startup**: `envValidator.js` instantly aborts Express nodes if critical keys like `DB_HOST` or `REDIS_HOST` are missing.
 
+---
+
+## 📈 SSDMS Phase 2 Core Upgrades
+
+### Upgrade 1: Multi-Hospital Support (Completed) 🏥
+- **Backend Tenant Context isolation**: Added full `hospital_id` support across all dashboard repositories and query methods (`getGlobalStats`, `getFilesByStage`, `getEmployeePerformance`, `getAuditLogs`, `getLeadTimeAnalytics`).
+- **Dynamic Hospital Access API**: Implemented a new secure `GET /api/v1/hospitals` endpoint which serves accessible hospitals according to the user's role (Admin receives all options; standard users receive only their assigned hospital).
+- **Persistent Selection & Header Interceptor**: Built a React-scoped `HospitalContext` to manage active hospital selection, persisting to `localStorage` and attaching the `X-Hospital-Id` header to every outgoing Axios call.
+- **Role-Based Header Layout**: Integrated a premium, interactive hospital selector dropdown into `ZenithHeader` for Admin users, while displaying a clean, responsive hospital info badge for standard staff.
+
+

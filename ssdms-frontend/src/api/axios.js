@@ -22,8 +22,12 @@ const processQueue = (error, token = null) => {
     failedQueue = [];
 };
 
-// No longer need to manually attach token as it's in a cookie
+// Attach the active hospital ID header for multi-hospital support
 API.interceptors.request.use((config) => {
+    const hospitalId = localStorage.getItem('ssdms_hospital_id');
+    if (hospitalId) {
+        config.headers['X-Hospital-Id'] = hospitalId;
+    }
     return config;
 });
 

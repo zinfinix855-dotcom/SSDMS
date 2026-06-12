@@ -16,7 +16,7 @@ class SessionRepository extends BaseRepository {
 
     async findByToken(token) {
         const query = `
-            SELECT s.*, u.employee_id, r.name as role_name, r.permissions 
+            SELECT s.*, u.employee_id, u.hospital_id, r.name as role_name, r.permissions 
             FROM user_sessions s
             JOIN users u ON s.user_id = u.employee_id
             JOIN roles r ON u.role_id = r.id
