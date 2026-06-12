@@ -13,14 +13,14 @@ require('dotenv').config({ path: 'ssdms-backend/.env' });
     try {
         console.log('Checking for records in Discharge stage that should be in Admission...');
         const [rows] = await pool.query('SELECT visit_number FROM files WHERE current_stage = "Discharge" AND status = "In Progress" AND deleted_at IS NULL');
-        
+
         console.log(`Found ${rows.length} records to move.`);
-        
+
         for (const row of rows) {
             await pool.query('UPDATE files SET current_stage = "Admission", updated_at = NOW() WHERE visit_number = ?', [row.visit_number]);
             console.log(`Moved ${row.visit_number} to Admission stage.`);
         }
-        
+
         console.log('Data migration complete.');
     } catch (err) {
         console.error('Migration failed:', err);
