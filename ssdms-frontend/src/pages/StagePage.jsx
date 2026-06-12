@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
 import {
     FileCheck, History, ArrowRightCircle,
@@ -21,31 +21,32 @@ import VerificationForm from '../components/workflow/VerificationForm';
 
 export default function StagePage() {
     const { stageName } = useParams();
-    const navigate = useNavigate();
     const [searchTerm, setSearchTerm] = useState('');
     const [formData, setFormData] = useState({});
     const [remarks, setRemarks] = useState('');
     const [showHistory, setShowHistory] = useState(false);
     const [isNewAdmission, setIsNewAdmission] = useState(false);
     const [view, setView] = useState('list');
+    const [refreshTrigger, setRefreshTrigger] = useState(0);
 
     const {
         fileData,
         setFileData,
-        loading,
         submitting,
         fetchFile,
-        forwardFile,
-        returnFile
+        forwardFile
     } = useStageWorkflow(stageName);
 
     useEffect(() => {
-        setFileData(null);
-        setSearchTerm('');
-        setFormData({});
-        setRemarks('');
-        setIsNewAdmission(stageName === 'Admission');
-        setView('list');
+        const timer = setTimeout(() => {
+            setFileData(null);
+            setSearchTerm('');
+            setFormData({});
+            setRemarks('');
+            setIsNewAdmission(stageName === 'Admission');
+            setView('list');
+        }, 0);
+        return () => clearTimeout(timer);
     }, [stageName, setFileData]);
 
     const handleSelectFromList = async (visitNumber) => {
@@ -56,7 +57,9 @@ export default function StagePage() {
 
     useSocket(useCallback((event) => {
         if (['FILE_FORWARDED', 'FILE_RETURNED', 'BULK_ACTION_COMPLETED'].includes(event.type)) {
-            if (view === 'list') fetchStats?.(); // Refresh queue if visible
+            if (view === 'list') {
+                setRefreshTrigger(prev => prev + 1);
+            }
         }
     }, [view]), { stage: stageName });
 
@@ -96,7 +99,7 @@ export default function StagePage() {
 
                 {view === 'list' ? (
                     <div className="animate-slide-in">
-                        <StageFileList stageName={stageName} onSelectFile={handleSelectFromList} />
+                        <StageFileList stageName={stageName} onSelectFile={handleSelectFromList} refreshTrigger={refreshTrigger} />
                     </div>
                 ) : (
                     <div className="row g-8 animate-slide-in">

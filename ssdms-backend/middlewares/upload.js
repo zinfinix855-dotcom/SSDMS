@@ -1,7 +1,7 @@
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const { v4: uuidv4 } = require('uuid');
+const crypto = require('crypto');
 
 // Ensure uploads directory exists
 const uploadDir = path.join(__dirname, '../uploads/attachments');
@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
     },
     filename: (req, file, cb) => {
         // Enforce UUID renaming to prevent filename collisions and directory traversal
-        const uniqueName = uuidv4() + path.extname(file.originalname).toLowerCase();
+        const uniqueName = crypto.randomUUID() + path.extname(file.originalname).toLowerCase();
         cb(null, uniqueName);
     }
 });

@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext';
 import { useHospital } from '../context/HospitalContext';
 
 export default function ZenithHeader({ title }) {
-    const { user, isAdmin } = useAuth();
+    const { isAdmin } = useAuth();
     const { theme, toggleTheme } = useTheme();
     const { selectedHospitalId, setHospital, hospitals, activeHospitalName } = useHospital();
 

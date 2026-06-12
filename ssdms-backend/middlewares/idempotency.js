@@ -1,5 +1,4 @@
 const redisClient = require('../config/redis');
-const { sendSuccess } = require('../utils/response');
 const logger = require('../utils/logger');
 
 const idempotency = async (req, res, next) => {

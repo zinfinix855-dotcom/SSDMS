@@ -1,5 +1,6 @@
 import { TrendingUp, TrendingDown, ArrowUpRight } from 'lucide-react';
 
+// eslint-disable-next-line no-unused-vars -- Icon is used as a JSX component <Icon />
 export default function StatCard({ label, value, sublabel, Icon, color, bg, trend, trendValue, onClick }) {
     return (
         <div className="zenith-card stat-card-premium" onClick={onClick}>

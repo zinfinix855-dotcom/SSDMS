@@ -15,6 +15,8 @@ export const HospitalProvider = ({ children }) => {
     // Fetch accessible hospitals whenever the user changes/logs in
     useEffect(() => {
         if (!user) {
+            // Intentional: synchronous state clear on logout is a direct response to auth change, not a cascade
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setHospitals([]);
             setSelectedHospitalId(null);
             localStorage.removeItem('ssdms_hospital_id');
@@ -77,5 +79,6 @@ export const HospitalProvider = ({ children }) => {
     );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useHospital = () => useContext(HospitalContext);
 export default HospitalContext;

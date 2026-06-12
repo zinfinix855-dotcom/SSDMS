@@ -1,9 +1,9 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {
     LayoutDashboard, Search, Hospital, ClipboardList, FileEdit, CheckCircle2,
     SearchCode, MonitorCheck, ShieldCheck, Banknote, Files, Archive,
-    Users, History, LogOut, Activity, Settings, ChevronLeft, ChevronRight, Shield
+    Users, History, Activity, ChevronLeft, ChevronRight, Shield
 } from 'lucide-react';
 
 const NAV_MAIN = [
@@ -32,8 +32,7 @@ const NAV_ADMIN = [
 ];
 
 export default function ZenithSidebar({ collapsed, setCollapsed }) {
-    const { user, isAdmin, isModerator, logout } = useAuth();
-    const navigate = useNavigate();
+    const { user, isAdmin, isModerator } = useAuth();
 
     const assignedSections = (() => {
         try { return JSON.parse(user?.assigned_sections || '[]'); } catch { return []; }
@@ -126,6 +125,7 @@ export default function ZenithSidebar({ collapsed, setCollapsed }) {
     );
 }
 
+// eslint-disable-next-line no-unused-vars -- Icon is used as a JSX component <Icon />
 function SidebarLink({ path, label, icon: Icon, collapsed }) {
     return (
         <NavLink 

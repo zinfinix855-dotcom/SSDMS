@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
 const SOCKET_URL = import.meta.env.VITE_API_URL?.replace('/api/v1', '') || 'http://127.0.0.1:5000';
@@ -9,12 +9,15 @@ const SOCKET_URL = import.meta.env.VITE_API_URL?.replace('/api/v1', '') || 'http
  * 
  * @param {Function} onEvent - callback invoked with event data
  * @param {Object} options - config { stage: 'Finance', file: 'SS-001', type: 'feed' | 'stage' | 'file' }
+ * @returns {{ socketRef: React.MutableRefObject, disconnect: Function }}
  */
 export default function useSocket(onEvent, options = { type: 'feed' }) {
     const socketRef = useRef(null);
+    const callbackRef = useRef(onEvent);
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    const stableOnEvent = useCallback(onEvent, []);
+    useEffect(() => {
+        callbackRef.current = onEvent;
+    }, [onEvent]);
 
     useEffect(() => {
         const socket = io(SOCKET_URL, {
@@ -41,7 +44,7 @@ export default function useSocket(onEvent, options = { type: 'feed' }) {
         if (options.type === 'feed') {
             socket.on('feed:batch', (batch) => {
                 if (Array.isArray(batch)) {
-                    batch.forEach(event => stableOnEvent(event));
+                    batch.forEach(event => callbackRef.current?.(event));
                 }
             });
         } else {
@@ -49,7 +52,7 @@ export default function useSocket(onEvent, options = { type: 'feed' }) {
                                  options.type === 'file' ? 'file:update' : 'v1/events';
 
             socket.on(eventChannel, (event) => {
-                stableOnEvent(event);
+                callbackRef.current?.(event);
             });
         }
 
@@ -65,12 +68,12 @@ export default function useSocket(onEvent, options = { type: 'feed' }) {
             if (options.stage) socket.emit('unsubscribe-stage', options.stage);
             if (options.file) socket.emit('unsubscribe-file', options.file);
             socket.disconnect();
+            socketRef.current = null;
         };
-    }, [stableOnEvent, options.type, options.stage, options.file]);
+    }, [options.type, options.stage, options.file]);
 
     return {
-        socket: socketRef.current,
+        socketRef,
         disconnect: () => socketRef.current?.disconnect()
     };
 }
-

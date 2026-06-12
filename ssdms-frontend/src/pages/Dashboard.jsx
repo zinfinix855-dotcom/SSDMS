@@ -18,7 +18,7 @@ import {
     Shield
 } from 'lucide-react';
 import PageTransition from '../components/common/PageTransition';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-line no-unused-vars
 
 const CARD_CONFIGS = [
     { key: 'totalFiles', label: 'Registered', sublabel: 'System Admissions', Icon: FileText, color: '#3b82f6', bg: 'rgba(59, 130, 246, 0.05)', route: '/search', trend: 'up', trendValue: 8 },
@@ -44,17 +44,23 @@ export default function Dashboard() {
     const { user } = useAuth();
     const navigate = useNavigate();
 
-    const fetchStats = useCallback(() => {
-        setLoading(true);
+    const fetchStats = useCallback((showSpinner = false) => {
+        if (showSpinner) setLoading(true);
         API.get('/dashboard/stats')
             .then((res) => setStats(res.stats))
             .catch(console.error)
             .finally(() => setLoading(false));
     }, []);
 
+    // Initial data load — loading starts true, setState in .then()/.finally() is async (not synchronous)
     useEffect(() => {
-        fetchStats();
-    }, [fetchStats]);
+        let cancelled = false;
+        API.get('/dashboard/stats')
+            .then((res) => { if (!cancelled) setStats(res.stats); })
+            .catch(console.error)
+            .finally(() => { if (!cancelled) setLoading(false); });
+        return () => { cancelled = true; };
+    }, []);
 
     useSocket(useCallback((event) => {
         const { event: eventName, visitNumber, toStage, type, eventId, timestamp } = event;

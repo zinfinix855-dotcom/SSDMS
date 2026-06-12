@@ -10,7 +10,7 @@ const AppError = require('../utils/AppError');
 // @desc    Get system health metrics
 // @route   GET /api/admin/health
 // @access  Private (Admin Only)
-const getSystemHealth = asyncHandler(async (req, res, next) => {
+const getSystemHealth = asyncHandler(async (req, res, _next) => {
     const stats = await adminService.getSystemHealth();
     return sendSuccess(res, stats, 'System health metrics retrieved');
 });
@@ -18,7 +18,7 @@ const getSystemHealth = asyncHandler(async (req, res, next) => {
 // @desc    Verify Audit Log Integrity
 // @route   POST /api/admin/verify-audit
 // @access  Private (Admin Only)
-const verifyAuditIntegrity = asyncHandler(async (req, res, next) => {
+const verifyAuditIntegrity = asyncHandler(async (req, res, _next) => {
     const result = await adminService.verifyAuditIntegrity();
     return sendSuccess(res, result, 'Audit integrity check completed');
 });
@@ -26,7 +26,7 @@ const verifyAuditIntegrity = asyncHandler(async (req, res, next) => {
 // @desc    Export full audit history to Excel
 // @route   GET /api/admin/audit/export
 // @access  Private (Admin Only)
-const exportAuditLogs = asyncHandler(async (req, res, next) => {
+const exportAuditLogs = asyncHandler(async (req, res, _next) => {
     const buffer = await adminService.generateAuditExport();
     
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
@@ -37,7 +37,7 @@ const exportAuditLogs = asyncHandler(async (req, res, next) => {
 // @desc    Update AI Component Weights Dynamically
 // @route   PUT /api/admin/ai-config
 // @access  Private (Admin Only)
-const updateAiConfig = asyncHandler(async (req, res, next) => {
+const updateAiConfig = asyncHandler(async (req, res, _next) => {
     const { weights } = req.body;
     if (!weights || typeof weights !== 'object') {
         throw new AppError('Missing weights object', 400);

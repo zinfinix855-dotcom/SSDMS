@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
             try {
                 const data = await AuthService.getMe();
                 setUser(data.user);
-            } catch (error) {
+            } catch {
                 console.warn('No active session found.');
                 setUser(null);
             } finally {
@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
                 const data = await AuthService.getMe();
                 setUser(data.user);
                 console.debug('[Auth] Heartbeat: Session refreshed');
-            } catch (error) {
+            } catch {
                 console.error('[Auth] Session expired during heartbeat');
                 setUser(null);
             }

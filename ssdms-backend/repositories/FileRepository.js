@@ -133,7 +133,9 @@ class FileRepository extends BaseRepository {
                     try { dataObj = JSON.parse(decrypted); } catch(e) { dataObj = decrypted; }
                 }
             } else if (typeof se.data === 'string') {
-                try { dataObj = JSON.parse(se.data); } catch(e) {}
+                try { dataObj = JSON.parse(se.data); } catch(e) {
+                    // ignore JSON parsing failures for legacy unencrypted string formats
+                }
             }
             return { ...se, data: dataObj };
         });

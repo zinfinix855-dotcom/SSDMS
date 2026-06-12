@@ -4,7 +4,7 @@ const { sendSuccess, sendPaginated } = require('../utils/response');
 const asyncHandler = require('../utils/asyncHandler');
 
 // @desc    Get all users (paginated)
-const getUsers = asyncHandler(async (req, res, next) => {
+const getUsers = asyncHandler(async (req, res, _next) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 20;
     const { users, total } = await userService.getPaginatedUsers(page, limit);
@@ -12,13 +12,13 @@ const getUsers = asyncHandler(async (req, res, next) => {
 });
 
 // @desc    Create new user
-const createUser = asyncHandler(async (req, res, next) => {
+const createUser = asyncHandler(async (req, res, _next) => {
     const user = await userService.createUser(req.body);
     return sendSuccess(res, user, 'User created successfully', 201);
 });
 
 // @desc    Reset password for a user
-const resetPassword = asyncHandler(async (req, res, next) => {
+const resetPassword = asyncHandler(async (req, res, _next) => {
     const { employee_id, new_password } = req.body;
     await userService.resetUserPassword(employee_id, new_password);
     
@@ -29,7 +29,7 @@ const resetPassword = asyncHandler(async (req, res, next) => {
 });
 
 // @desc    Update user details
-const updateUser = asyncHandler(async (req, res, next) => {
+const updateUser = asyncHandler(async (req, res, _next) => {
     const employee_id = req.params.id;
     await userService.updateUserDetails(employee_id, req.body);
     

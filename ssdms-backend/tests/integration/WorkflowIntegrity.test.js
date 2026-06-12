@@ -29,10 +29,12 @@ describe('Workflow Integration & Hardening', () => {
             [userId, employeeRoleId, employeeRoleId]
         );
 
-        // Ensure test environment is clean
-        await pool.query('DELETE FROM files WHERE visit_number = ?', [testVisit]);
-        await pool.query('DELETE FROM event_store WHERE visit_number = ?', [testVisit]);
+        // Ensure test environment is clean (delete referencing tables first)
         await pool.query('DELETE FROM file_movements WHERE visit_number = ?', [testVisit]);
+        await pool.query('DELETE FROM event_store WHERE visit_number = ?', [testVisit]);
+        await pool.query('DELETE FROM section_entries WHERE visit_number = ?', [testVisit]);
+        await pool.query('DELETE FROM finance_splits WHERE visit_number = ?', [testVisit]);
+        await pool.query('DELETE FROM files WHERE visit_number = ?', [testVisit]);
         
         await pool.query(
             'INSERT INTO files (visit_number, hospital_id, current_stage, status, patient_name, mr_number, cnic) VALUES (?, 1, "Admission", "In Progress", "Test Patient", "MR-001", "12345-6789012-3")',

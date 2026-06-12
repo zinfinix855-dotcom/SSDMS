@@ -42,7 +42,7 @@ redis.on('connect', () => {
     _redisReady = true;
     logger.info('✅ Redis connected');
 });
-redis.on('error', (err) => {
+redis.on('error', (_err) => {
     _redisReady = false;
 });
 redis.on('close', () => { _redisReady = false; });

@@ -15,7 +15,7 @@ const SLA_STATUS = {
 
 const PAGE_SIZE = 12;
 
-export default function StageFileList({ stageName, onSelectFile }) {
+export default function StageFileList({ stageName, onSelectFile, refreshTrigger }) {
     const [files, setFiles]         = useState([]);
     const [total, setTotal]         = useState(0);
     const [totalPages, setTotalPages] = useState(1);
@@ -41,7 +41,7 @@ export default function StageFileList({ stageName, onSelectFile }) {
         }
     }, [stageName]);
 
-    useEffect(() => { load(1); }, [load]);
+    useEffect(() => { load(1); }, [load, refreshTrigger]);
 
     return (
         <div className="zenith-card p-0 overflow-hidden">

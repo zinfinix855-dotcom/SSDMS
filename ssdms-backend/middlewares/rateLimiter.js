@@ -43,7 +43,9 @@ const authLimiter = rateLimit({
                 level: 'CRITICAL',
                 timestamp: new Date()
             });
-        } catch(e) {}
+        } catch(e) {
+            // ignore event publish failures
+        }
         res.status(options.statusCode).json(options.message);
     },
     message: {

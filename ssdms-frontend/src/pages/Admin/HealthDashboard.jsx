@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../../utils/api';
+import API from '../../api/axios';
 import { 
     Activity, 
     Database, 
@@ -19,7 +19,7 @@ const HealthDashboard = () => {
 
     const fetchHealth = async () => {
         try {
-            const res = await api.get('/admin/health');
+            const res = await API.get('/admin/health');
             setHealth(res.data.data);
         } catch (err) {
             console.error('Failed to fetch health metrics', err);
@@ -32,7 +32,7 @@ const HealthDashboard = () => {
         setVerifying(true);
         setVerifyResult(null);
         try {
-            const res = await api.post('/admin/audit/verify');
+            const res = await API.post('/admin/audit/verify');
             setVerifyResult(res.data.data);
         } catch {
             setVerifyResult({ status: 'Error', message: 'Verification failed' });

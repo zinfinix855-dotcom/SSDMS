@@ -150,7 +150,9 @@ app.use(notFound);
 if (process.env.SENTRY_DSN) {
     try {
         app.use(require('@sentry/node').Handlers.errorHandler());
-    } catch(e) {}
+    } catch(e) {
+        // ignore sentry setup error if package not installed
+    }
 }
 
 app.use(errorHandler);
