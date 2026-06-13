@@ -26,8 +26,12 @@ jobs:
           cd ssdms-backend && npm run lint
           cd ../ssdms-frontend && npm run lint
 
-      # - name: Run Backend Tests
-      #   run: cd ssdms-backend && npm run test
+      - name: Run Backend Tests
+        run: cd ssdms-backend && npm run test
+
+      - name: Build Frontend
+        run: |
+          cd ../ssdms-frontend && npm run build
 
   build-and-deploy:
     needs: lint-and-test

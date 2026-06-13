@@ -112,24 +112,30 @@ app.get('/health', async (req, res) => {
         }
     };
 
+    // Check Database (fatal)
     try {
-        // DB Check
         await pool.query('SELECT 1');
         health.checks.database = 'connected';
+    } catch (err) {
+        health.checks.database = 'failed';
+        health.status = 'error';
+        health.message = `Database check failed: ${err.message}`;
+        const code = 503;
+        return res.status(code).json(health);
+    }
 
-        // Redis Check
+    // Check Redis (non-fatal) — mark unavailable but don't bring the whole service down
+    try {
         await redis.ping();
         health.checks.redis = 'connected';
-
-        res.status(200).json(health);
     } catch (err) {
-        health.status = 'error';
-        health.message = err.message;
-        if (health.checks.database === 'unknown') health.checks.database = 'failed';
-        if (health.checks.redis === 'unknown') health.checks.redis = 'failed';
-        
-        res.status(503).json(health);
+        health.checks.redis = 'unavailable';
+        // attach note but keep overall status success (DB is primary)
+        health.message = health.message ? `${health.message}; Redis: ${err.message}` : `Redis: ${err.message}`;
     }
+
+    // Return 200 if DB connected (even if redis is unavailable)
+    res.status(200).json(health);
 });
 
 app.get('/', (req, res) => {
