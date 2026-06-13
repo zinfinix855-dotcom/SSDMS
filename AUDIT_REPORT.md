@@ -23,6 +23,7 @@
 - Verified backend and frontend linting, tests, and build success.
 - Verified backend startup success through `npm run dev` from the repository root.
 - Verified database migration state using Knex.
+ - Patched `ssdms-backend/app.js` `/health` endpoint to treat Redis unavailability as non-fatal so core API remains healthy when Redis is down.
 
 ## 3. Missing Files Created
 
@@ -70,12 +71,20 @@
 - Backend connected to MySQL successfully.
 - Frontend Vite server started successfully.
 - `knex migrate:status` shows no pending migrations and 3 completed migrations.
-- Redis connectivity is not available locally in this environment, so BullMQ worker initialization and Redis health checks remain unverified.
+ - Redis connectivity is not available locally in this environment, so BullMQ worker initialization and Redis health checks remain unverified.
+
+Note: The backend `/health` endpoint was updated to return HTTP 200 when the database is connected even if Redis is unavailable. This allows orchestration systems to consider the API operational while background workers stay disabled until Redis becomes reachable. Docker and Redis are required for full-worker validation.
 
 ## 10. Remaining Limitations
 
 - Redis is not installed/running locally, so the backend health endpoint reports `redis: failed`.
 - Docker is not available in the current environment, so container deployment startup cannot be fully validated.
+
+## 11. Sensitive Data Remediation
+
+- Found committed secrets in `ssdms-backend/.env` and `ssdms-backend/.env.production`.
+- Replaced both files with placeholder templates and removed cleartext secrets from the working tree. **You must rotate all exposed secrets immediately** (JWT secrets, DB passwords, encryption keys) and rotate any credentials that were previously published.
+- Add a CI/CD secret manager (Vault, AWS Secrets Manager, GitHub Secrets) and ensure `.env` files with real secrets are never committed. Consider performing a git history scrub if these values were pushed to a remote repository.
 
 ---
 

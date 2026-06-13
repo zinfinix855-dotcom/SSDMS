@@ -1,0 +1,84 @@
+name: Integration Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: ssdms
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd="redis-cli ping"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install backend deps
+        working-directory: ssdms-backend
+        run: npm ci
+
+      - name: Wait for MySQL
+        run: |
+          for i in {1..30}; do
+            mysqladmin ping -h127.0.0.1 -uroot -proot >/dev/null 2>&1 && break || sleep 2;
+          done
+
+      - name: Run migrations
+        working-directory: ssdms-backend
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USER: root
+          DB_PASSWORD: root
+          DB_NAME: ssdms
+        run: npx knex migrate:latest --knexfile knexfile.js
+
+      - name: Run Backend Tests
+        working-directory: ssdms-backend
+        env:
+          DB_HOST: 127.0.0.1
+          DB_USER: root
+          DB_PASSWORD: root
+          DB_NAME: ssdms
+          REDIS_HOST: 127.0.0.1
+        run: npm test --silent
+
+      - name: Enqueue test job (if Redis available)
+        working-directory: ssdms-backend
+        env:
+          REDIS_HOST: 127.0.0.1
+        run: node scripts/enqueue_test_job.js || echo "enqueue failed"
+
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-log
+          path: ssdms-backend/test_output.txt
