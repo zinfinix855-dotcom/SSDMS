@@ -30,5 +30,26 @@ exports.validateEnv = () => {
         process.exit(1);
     }
 
+    // Additional security validations
+    if (!process.env.COOKIE_SECRET || process.env.COOKIE_SECRET.length < 32) {
+        logger.error('CRITICAL: COOKIE_SECRET is required and must be at least 32 characters long.');
+        process.exit(1);
+    }
+
+    if (process.env.ENCRYPTION_KEY && process.env.ENCRYPTION_KEY.length < 32) {
+        logger.error('CRITICAL: ENCRYPTION_KEY must be at least 32 characters long.');
+        process.exit(1);
+    }
+
+    if (process.env.BINDEX_SALT && process.env.BINDEX_SALT.length < 16) {
+        logger.error('CRITICAL: BINDEX_SALT should be at least 16 characters long.');
+        process.exit(1);
+    }
+
+    if (!process.env.DB_PASSWORD || process.env.DB_PASSWORD.length < 8) {
+        logger.error('CRITICAL: DB_PASSWORD missing or too weak. Please set a strong DB password.');
+        process.exit(1);
+    }
+
     logger.info('Environment variables validated successfully.');
 };
